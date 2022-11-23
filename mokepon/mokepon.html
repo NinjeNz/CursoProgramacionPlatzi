@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>MOKEPON!</title>
+        <script src="./js/mokepon.js"></script>
     </head>
     <body>
         <h1>MOKEPON! 🔥💧🌱</h1>
@@ -13,10 +14,10 @@
             <label for="hipodoge">Hipodoge</label>
             <input type="radio" name="mokepon" id="hipodoge"/>
 
-            <label>Capipepo</label>
+            <label for="capipepo">Capipepo</label>
             <input type="radio" name="mokepon" id="capipepo"/>
 
-            <label>Ratigueya</label>
+            <label for ="ratigueya">Ratigueya</label>
             <input type="radio" name="mokepon" id="ratigueya"/>
 
             Hipodoge -> Agua
@@ -26,7 +27,7 @@
             Tucapalma -> Agua y Tierra
             Pydos -> Tierra y Fuego
 
-            <button>Seleccionar</button>
+            <button id="boton-mokepones">Seleccionar</button>
         </section>
 
         <section id="seleccionar-ataque">
@@ -36,9 +37,9 @@
             <p>El mokepon enemigo tiene <span>3</span> vidas</p>
 
             <p>
-                <button>Fuego 🔥</button>
-                <button>Agua 💧</button>
-                <button>Tierra 🌱</button>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">Agua 💧</button>
+                <button id="boton-tierra">Tierra 🌱</button>
             </p>
         </section>
 
@@ -48,7 +49,7 @@
 
 
         <section id="Reiniciar">
-            <button>Reiniciar</button>
+            <button id="boton-reiniciar">Reiniciar</button>
         </section>
     </body>
 
