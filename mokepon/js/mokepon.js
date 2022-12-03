@@ -1,7 +1,11 @@
+function iniciarJuego() {
+    let botonMokeponJugador = document.getElementById('boton-mokepones')
+    botonMokeponJugador.addEventListener('click', seleccionarMokeponJugador)
+}
+
 function seleccionarMokeponJugador() {
     alert("SELECCIONASTE TU MOKEPON")
 
 }
 
-let botonMascota = document.getElementById('boton_mokepones')
-botonMascota.addEventListener('click', seleccionarMokeponJugador)
+window.addEventListener('load', iniciarJuego)
