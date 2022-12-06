@@ -7,13 +7,15 @@ function seleccionarMokeponJugador() {
     let inputHipodoge = document.getElementById('hipodoge')
     let inputCapipepo = document.getElementById('capipepo')
     let inputRatigueya = document.getElementById('ratigueya')
+    let spanMokeponJugador = document.getElementById('mokepon-jugador')
+
 
     if (inputHipodoge.checked) {
-        alert("Seleccionaste a HIPODOGE")
+        spanMokeponJugador.innerHTML = 'Hipodoge'
     } else if (inputCapipepo.checked) {
-        alert("Seleccionaste a CAPIPEPO")
+        spanMokeponJugador.innerHTML = 'Capipepo'
     } else if (inputRatigueya.checked) {
-        alert("Seleccionaste a RATIGUEYA")
+        spanMokeponJugador.innerHTML = 'Ratigueya'
     } else {
         alert('SELECCIONA UN MOKEPON') 
     }
