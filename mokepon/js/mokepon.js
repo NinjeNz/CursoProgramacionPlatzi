@@ -19,6 +19,26 @@ function seleccionarMokeponJugador() {
     } else {
         alert('SELECCIONA UN MOKEPON') 
     }
+
+    seleccionarMokeponEnemigo()
+}
+
+function seleccionarMokeponEnemigo() {
+    let ataqueAleatorio = aleatorio(1,3)
+    let spanMokeponEnemigo = document.getElementById('mokepon-enemigo')
+    
+    if (ataqueAleatorio == 1) {
+        spanMokeponEnemigo.innerHTML = 'Hipodoge'
+    } else if (ataqueAleatorio == 2) {
+        spanMokeponEnemigo.innerHTML = 'Capipepo'
+    } else {
+        spanMokeponEnemigo.innerHTML = 'Ratigueya'
+    }
+    
+}
+
+function aleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 window.addEventListener('load', iniciarJuego)
