@@ -1,6 +1,15 @@
+let ataqueJugador
+
 function iniciarJuego() {
     let botonMokeponJugador = document.getElementById('boton-mokepones')
     botonMokeponJugador.addEventListener('click', seleccionarMokeponJugador)
+
+    let botonFuego = document.getElementById('boton-fuego')
+    botonFuego.addEventListener('click', ataqueFuego)
+    let botonAgua = document.getElementById('boton-agua')
+    botonFuego.addEventListener('click', ataqueAgua)
+    let botonTierra = document.getElementById('boton-tierra')
+    botonFuego.addEventListener('click', ataqueTierra)
 }
 
 function seleccionarMokeponJugador() {
