@@ -1,4 +1,5 @@
 let ataqueJugador
+let ataqueEnemigo
 
 function iniciarJuego() {
     let botonMokeponJugador = document.getElementById('boton-mokepones')
@@ -7,9 +8,9 @@ function iniciarJuego() {
     let botonFuego = document.getElementById('boton-fuego')
     botonFuego.addEventListener('click', ataqueFuego)
     let botonAgua = document.getElementById('boton-agua')
-    botonFuego.addEventListener('click', ataqueAgua)
+    botonAgua.addEventListener('click', ataqueAgua)
     let botonTierra = document.getElementById('boton-tierra')
-    botonFuego.addEventListener('click', ataqueTierra)
+    botonTierra.addEventListener('click', ataqueTierra)
 }
 
 function seleccionarMokeponJugador() {
@@ -44,6 +45,25 @@ function seleccionarMokeponEnemigo() {
         spanMokeponEnemigo.innerHTML = 'Ratigueya'
     }
     
+}
+
+function ataqueFuego() {
+    ataqueJugador='FUEGO'
+    ataqueRandomEnemigo()
+}
+
+function ataqueAgua() {
+    ataqueJugador='AGUA'
+    ataqueRandomEnemigo()
+}
+
+function ataqueTierra() {
+    ataqueJugador='TIERRA'
+    ataqueRandomEnemigo()
+}
+
+function ataqueEnemigo(){
+
 }
 
 function aleatorio(min, max) {
