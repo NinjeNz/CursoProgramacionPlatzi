@@ -34,12 +34,12 @@ function seleccionarMokeponJugador() {
 }
 
 function seleccionarMokeponEnemigo() {
-    let ataqueAleatorio = aleatorio(1,3)
+    let mokeponAleatorio = aleatorio(1,3)
     let spanMokeponEnemigo = document.getElementById('mokepon-enemigo')
     
-    if (ataqueAleatorio == 1) {
+    if (mokeponAleatorio == 1) {
         spanMokeponEnemigo.innerHTML = 'Hipodoge'
-    } else if (ataqueAleatorio == 2) {
+    } else if (mokeponAleatorio == 2) {
         spanMokeponEnemigo.innerHTML = 'Capipepo'
     } else {
         spanMokeponEnemigo.innerHTML = 'Ratigueya'
@@ -62,8 +62,8 @@ function ataqueTierra() {
     ataqueRandomEnemigo()
 }
 
-function ataqueEnemigo(){
-
+function ataqueRandomEnemigo(){
+   let ataqueAleatorio = aleatorio(1,3)
 }
 
 function aleatorio(min, max) {
